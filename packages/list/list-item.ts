@@ -106,7 +106,7 @@ export class MdcListItemSecondary {
     '(click)': '_emitChangeEvent()',
     '(keydown)': '_onKeydown($event)'
   },
-  template: '<ng-content></ng-content>',
+  template: '<span class="mdc-list-item__ripple"></span><ng-content></ng-content>',
   encapsulation: ViewEncapsulation.None,
   changeDetection: ChangeDetectionStrategy.OnPush,
   providers: [MdcRipple]
